@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кривая Безье</title>
+    <script src="./svg.min.js"></script>
+    <script src="./svg.path.min.js"></script>
+    <p>Построение кривой Безье по двум контрольным точкам</p>
+</head>
+<body>
+<p>Введите координаты 4 точек через пробел (х y x ...): начальной, двух контрольных и конечной. Например: </p>
+<input type="text"
+       id="coordinatesInput"
+       value="50 10 90 50 180 50 180 10">
+
+<button type="button"
+        onclick="bezierCurveFunction()"
+        style="
+             background-color: #FF0066;
+             border: none;
+             color: white;
+             padding: 4px 20px;
+             text-align: center;
+             display: inline-block;
+             font-size: 13px;
+             border-radius: 2px;">
+    Построить кривую
+</button>
+<p id="demo"></p>
+<script src="curves.js"></script>
+<p id="inputWarning"></p>
+</body>
+</html>
+
